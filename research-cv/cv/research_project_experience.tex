@@ -1,190 +1,68 @@
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{Research Project Experience}
+\cvsection{Research Projects}
 
-
-%-------------------------------------------------------------------------------
-%	CONTENT
-%-------------------------------------------------------------------------------
-\newcommand{\spark}{\href{https://mit.edu/sparklab/}{SPARK Lab, MIT}}
-\newcommand{\urban}{\href{https://urobot.kaist.ac.kr/}{Urban Robotics Lab., KAIST}}
 \begin{cventries}
-%---------------------------------------------------------
-  % KETI-NRF Harmonic space
   \cventry
-    {Supported by National Research Foundation, Republic of Korea} % Job title
-    {Development of Harmonic-Space Operation Using Seamless Information Sharing Among Large-Scale Heterogeneous UVs}
-    {\spark} % Location
-    {Sep. 2024 - Current} % Date(s)
+    {Principal Investigator, NRF Ph.D. Candidate Research Fellowship}
+    {Building a Real-Time Multi-Robot SLAM Framework in Communication-Constrained Scenarios}
+    {National Research Foundation of Korea}
+    {Sep. 2025 - Current}
     {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item Implemented multi-session LiDAR SLAM
-        \item Studied semantic SLAM for heterogeneous robot platforms
-        \item Keywords: 3D semantic mapping, Scene graph-based SLAM
-      \end{cvitems}
-    }
-
-  % KETI-NRF Harmonic space
-  \cventry
-    {Supported by National Research Foundation, Republic of Korea} 
-    {Research on Certifiable Perception and Long-Term Metric-Semantic Mapping for Autonomous Vehicles} 
-    {Postdoctoral Fellowship Program} 
-    {Sep. 2024 - Sep. 2025} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item Studied long-term metric-semantic mapping for mobile robots or autonomous vehicles
-        \item Keywords: Metric-semantic mapping, Semantic SLAM
-      \end{cvitems}
-    }
-
- % Multi-robot by DCIST
- \cventry
-    {Supported by DCIST \& DevCom} % Job title
-    {Development of Scene Graph-Based Multi-Robot Multi-Session SLAM} % Organization
-    {\spark} % Location
-    {Apr. 2024 - Current} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item Implemented scene graph-based SLAM methods based on Hydra
-        \item Ran semantic SLAM and enhanced the performance in our real-world campus scenes
-        \item Keywords: 3D semantic mapping, Semantic SLAM
-      \end{cvitems}
-    }
-
-  % LG Semantic SLAM
-  \cventry
-    {Supported by LG Electronics} % Job title
-    {Development of Semantic SLAM for Spatial AI} % Organization
-    {\urban} % Location
-    {Apr. 2023 - Dec. 2023} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item Implemented deep learning-aided SLAM methods based on Hydra
-        \item Ran semantic SLAM and enhanced the performance in our real-world campus scenes
-        \item Keywords: 3D semantic mapping, Semantic SLAM
-      \end{cvitems}
-    }
-
-  % 라스트마일
-  \cventry
-    {Supported by the Ministry of Trade, Industry \& Energy (MOTIE), Republic of Korea} % Job title
-    {Development of Artificial Intelligence Robot Autonomous Navigation Technology for Agile Movement in Crowded Space} % Organization
-    {\urban} % Location
-    {Mar. 2020 - June 2023} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item Was in charge of dynamic object detection in order to generate static maps and perform moving-object-robust SLAM in dynamic environments
-        \item Keywords: SLAM, 3D LiDAR, Static Map Building, OpenCV, C++, ROS
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  % LG Semantic SLAM
-  \cventry
-    {Supported by LG Electronics} % Job title
-    {Study of Semantic SLAM Towards Spatial AI Technologies} % Organization
-    {\urban} % Location
-    {Mar. 2022 - Dec. 2022} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item Studied various deep learning-aided SLAM methods, such as Kimera and Hydra
-        \item Run semantic SLAM in our real-world data to check the feasibility
-        \item Keywords: 3D semantic mapping, Semantic SLAM
-      \end{cvitems}
-    }
-
-  % 현대 케피코
-  \cventry
-    {Supported by Hyundai Kefico} % Job title
-    {Deep Learning-Based Depth Prediction Using a Mono Camera and 2D LiDAR Sensor} % Organization
-    {\urban} % Location
-    {Mar. 2022 - Nov. 2022} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item Was in charge of the development of deep learning-based depth prediction
-        \item Studied various calibration methods (2D LiDAR-to-camera, 3D LiDAR-to-IMU, camera-to-IMU)
-        \item Ran deep learning models on NVIDIA Xavier
-        \item Keywords: Real-time deep learning, Depth prediction, Calibration, PyTorch, OpenCV, C++, ROS
-      \end{cvitems}
-    }
-
-  % VPR
-  \cventry
-    {Supported by KAIST Institute for Security Convergence Research} % Job title
-    {A Study on the Visual Place Recognition in Multiple Photos} % Organization
-    {\urban} % Location
-    {Mar. 2020 - Dec. 2020} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item Studied visual place recognition application. Struggled to improve the performance of the SOTA deep learning-based VPR approaches
-        \item Keywords: Visual place recognition, Deep learning, Semantic segmentation, Inpainting, Python, PyTorch
-      \end{cvitems}
-    }
-
-  % 이동지능
-  \cventry
-    {Supported by the Ministry of Trade, Industry \& Energy (MOTIE)} % Job title
-    {Development of Robot Intelligence Technology for Mobility with Learning Capability Toward Robust and Seamless Indoor and Outdoor Autonomous Navigation} % Organization
-    {\urban} % Location
-    {Mar. 2020 - Sep. 2020} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item Developed SLAM algorithm applied to mobile robots
-        \item Was in charge of SLAM, static map building in low-dynamic environments, and movable area prediction
-        \item Keywords: SLAM, 3D LiDAR, Registration, Static map building, Mobile robots, C++, ROS
+      \begin{cvitems}
+        \item Multi-robot SLAM framework that keeps robots collaborating under delays, dropouts, and limited bandwidth while exchanging only the minimum necessary information
+        \item Year 1: lossless information-exchange policy on an exchange graph, built on lightweight global descriptors and sequence matching
+        \item Year 2: submap-based inter-robot registration and distributed back-end optimization for globally consistent mapping
+        \item Year 3: datasets and hardware with real communication logs, full-system integration, and field validation
       \end{cvitems}
     }
 
   \cventry
-    {Supported by Samsung Electronics Co., Ltd.} % Job title
-    {Indoor Navigation of Mobile Robots using Deep Learning-based Object Recognition} % Organization
-    {\urban} % Location
-    {Jan. 2019 - Sep. 2019} % Date(s)
+    {Participant, Industry Project}
+    {Stereo Vision-based Object Localization for Unmanned Surface Vehicles}
+    {Samsung Heavy Industries}
+    {2023}
     {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item Developed SLAM and perception algorithms applied to robot cleaners for achieving robust navigation in indoor environments
-        \item Was in charge of depth prediction using a 2D LiDAR sensor and a monocular camera for collision avoidance of mobile robots via deep learning
-        \item Keywords: 2D LiDAR, Sensor Fusion, Deep Learning, Mobile Robots, PyTorch, ROS
+      \begin{cvitems}
+        \item Developed \textit{Obcalizer}, a training-free stereo-vision framework for maritime metric object localization (detection, metric depth and 3D position estimation, and data association)
+        \item Open-vocabulary detection with YOLO-World, box-level epipolar context matching for metric depth, and a depth-aware Kalman filter for tracking
+        \item Lowest average 3D position error on real-world USV datasets (1.52\,m vs. 3.51\,m for the strongest baseline); runs at the 10\,Hz sensor rate on an NVIDIA Jetson AGX Orin
       \end{cvitems}
     }
 
-    \cventry
-      {Supported by IITP, which is a government-affiliated organization} % Job title
-      {IITP Artificial Intelligence R\&D Grand Challenge: Track 4, Intelligent Control} % Organization
-      {\urban} % Location
-      {Jan. 2019 - Jun. 2019} % Date(s)
-      {
-        \begin{cvitems} % Description(s) of tasks/responsibilities
-          \item Was in charge of the task of a drone passing through windows
-          \item Implemented RGB-D camera-based path planning\&following. Participated in applying VIO to estimate the odometry of UAV
-          \item Keywords: VIO, Path planning and following, Projective geometry, OpenCV, ROS
-        \end{cvitems}
-      }
+  \cventry
+    {Team Member, Challenge}
+    {\href{https://sparolab.github.io/research/imu_challenge/}{TartanIMU Challenge @ IROS 2026}}
+    {IROS 2026 Workshop}
+    {Oct. 2026}
+    {
+      \begin{cvitems}
+        \item \textit{Single-Head IMU Velocity Estimation Across Platforms via a Multi-Scale, Embodiment-Aware Encoder}: one network estimating velocity from IMU alone across cars, quadrupeds, drones, and handheld devices
+        \item \textbf{2nd place among 131 teams}
+      \end{cvitems}
+    }
 
-    \cventry
-      {Outsourced by Pixoneer Geomatics and Agency for Defense Development} % Job title
-      {Machine Learning-Based Classification of Small Object Captured by Unmanned Aerial Vehicle} % Organization
-      {\urban} % Location
-      {Jan. 2018 - Dec. 2019} % Date(s)
-      {
-        \begin{cvitems} % Description(s) of tasks/responsibilities
-          \item Developed both SVM-based and Deep Learning-based classification algorithms
-          \item Implemented HOG-LBP for input to SVM and engaged in designing novel Deep Learning architecture.
-          \item Keywords: Deep Learning, SVM, HOG-LBP, Classification, Python, PyTorch
-        \end{cvitems}
-      }
+  \cventry
+    {Team Member, Challenge}
+    {\href{https://sparolab.github.io/research/hilti_challenge/}{Hilti-Trimble SLAM Challenge 2026 @ ICRA 2026}}
+    {ICRA 2026 Workshop}
+    {Jun. 2026}
+    {
+      \begin{cvitems}
+        \item \textit{$\sqrt{\mathrm{VINS}}$-Based 360 Visual-Inertial SLAM Systems}: a 360-camera visual-inertial SLAM pipeline for long indoor sequences with dark regions, repetitive corridors, and dynamic objects
+        \item \textbf{2nd place in the SLAM category}
+      \end{cvitems}
+    }
 
-    \cventry
-      {Supported by Ministry of Trade, Industry, and Energy} % Job title
-      {Range-Only SLAM in Complex Disaster Situation} % Organization
-      {\urban} % Location
-      {Jan. 2018 - Dec. 2018} % Date(s)
-      {
-        \begin{cvitems} % Description(s) of tasks/responsibilities
-          \item Implemented Monte Carlo localization (MCL) using range measurements by ultra-wideband (UWB) sensors for UAV from scratch single-handed
-          \item Struggled to cover Non-line-of-sight (NLOS) issues.
-          \item Keywords: MCL, Beacon-based localization, UWB sensors, NLOS, ROS
-        \end{cvitems}
-      }
+  \cventry
+    {Maintainer, Open Source}
+    {\href{https://github.com/hogyun2/awesome-lidar-place-recognition}{Awesome LiDAR Place Recognition} \githubstars{224}}
+    {Personal Project}
+    {2024 - Current}
+    {
+      \begin{cvitems}
+        \item A curated list of LiDAR place recognition research with code or download pages, covering handcrafted and learning-based methods, single-/multi-session and multi-robot datasets, and related multi-robot mapping and SLAM algorithms
+      \end{cvitems}
+    }
 \end{cventries}
